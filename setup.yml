@@ -2,3 +2,7 @@
 
 - name: Mac setup and configuration.
   hosts: localhost
+
+  roles:
+    - name: yadm
+      tags: [yadm]
