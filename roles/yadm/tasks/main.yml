@@ -20,4 +20,6 @@
 
 - name: Decrypt files.
   shell: yadm decrypt
+  environment:
+    GPG_TTY: '$(tty)'
   when: yadm_clone_result.changed
