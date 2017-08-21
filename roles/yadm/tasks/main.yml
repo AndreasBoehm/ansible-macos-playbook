@@ -2,8 +2,11 @@
 
 - name: Ensure yadm is installed.
   homebrew:
-    name: yadm
+    name: "{{ item }}"
     state: latest
+  with_items:
+    - yadm
+    - gpg # required for encryptio/decryption
 
 - name: Fetch dotfiles.
   shell: yadm clone {{ yadm_repo_url }}
@@ -13,4 +16,8 @@
 
 - name: Overwrite local changes, if needed.
   shell: yadm reset --hard
+  when: yadm_clone_result.changed
+
+- name: Decrypt files.
+  shell: yadm decrypt
   when: yadm_clone_result.changed
