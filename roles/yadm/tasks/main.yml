@@ -6,7 +6,7 @@
     state: latest
   with_items:
     - yadm
-    - gpg # required for encryptio/decryption
+    - gpg # required for encryption/decryption of dotfiles
 
 - name: Fetch dotfiles.
   shell: yadm clone {{ yadm_repo_url }}
@@ -16,10 +16,4 @@
 
 - name: Overwrite local changes, if needed.
   shell: yadm reset --hard
-  when: yadm_clone_result.changed
-
-- name: Decrypt files.
-  shell: yadm decrypt
-  environment:
-    GPG_TTY: '$(tty)'
   when: yadm_clone_result.changed
