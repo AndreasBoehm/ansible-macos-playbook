@@ -23,6 +23,11 @@
     repo: https://github.com/zsh-users/zsh-syntax-highlighting.git
     dest: ~/.oh-my-zsh/custom/plugins/zsh-syntax-highlighting
 
+- name: Install zsh-autosuggestions.
+  git:
+    repo: https://github.com/zsh-users/zsh-autosuggestions.git
+    dest: ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
 - name: Register ZSH as globally available shell.
   become: yes
   lineinfile:
