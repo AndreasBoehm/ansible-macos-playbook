@@ -12,10 +12,10 @@
     - buo/cask-upgrade
 
 - name: Install app casks.
-    homebrew_cask:
-        name: "{{ item }}"
-        state: latest
-    with_items:
+  homebrew_cask:
+    name: "{{ item }}"
+    state: latest
+  with_items:
     - 1password
     - alfred
     - android-studio
@@ -58,10 +58,10 @@
     - xld
 
 - name: Install quicklook casks.
-    homebrew_cask:
-        name: "{{ item }}"
-        state: latest
-    with_items:
+  homebrew_cask:
+    name: "{{ item }}"
+    state: latest
+  with_items:
     - qlcolorcode
     - qlimagesize
     - qlmarkdown
@@ -71,10 +71,10 @@
     - provisionql
 
 - name: Install font casks.
-    homebrew_cask:
-        name: "{{ item }}"
-        state: latest
-    with_items:
+  homebrew_cask:
+    name: "{{ item }}"
+    state: latest
+  with_items:
     - font-fira-code
     - font-meslo-lg
 
