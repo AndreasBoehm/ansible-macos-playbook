@@ -43,7 +43,7 @@ brew install ansible
 https://github.com/jeromegamez/ansible-macos-playbook.git
 
 # Run the playbook
-ansible-playbook main.yml
+ansible-playbook setup.yml
 ```
 
 ## Acknowledgements
