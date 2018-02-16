@@ -40,7 +40,7 @@ xcode-select --install
 brew install ansible
 
 # Clone this repository
-https://github.com/jeromegamez/ansible-macos-playbook.git
+https://github.com/AndreasBoehm/ansible-macos-playbook.git
 
 # Run the playbook
 ansible-playbook setup.yml
