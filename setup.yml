@@ -9,3 +9,6 @@
 
     - name: yadm
       tags: [yadm]
+
+    - name: apps
+      tags: [apps]

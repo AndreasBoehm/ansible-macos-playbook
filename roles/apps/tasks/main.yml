@@ -1,0 +1,100 @@
+---
+
+- name: Ensure Homebrew Taps.
+  homebrew_tap:
+    tap: "{{ item }}"
+    state: present
+  with_items:
+    - caskroom/cask
+    - caskroom/drivers
+    - caskroom/fonts
+    - caskroom/versions
+    - buo/cask-upgrade
+
+- name: Install app casks.
+    homebrew_cask:
+        name: "{{ item }}"
+        state: latest
+    with_items:
+    - 1password
+    - alfred
+    - android-studio
+    - audirvana-plus2
+    - bartender
+    - calibre
+    - charles
+    - cheatsheet
+    - cleanmymac
+    - cyberduck
+    - docker
+    - dropbox
+    - flux
+    - fluid
+    - github
+    - google-chrome
+    - google-chrome-beta
+    - hyperswitch
+    - imageoptim
+    - iterm2
+    - karabiner-elements
+    - jetbrains-toolbox
+    - logitech-myharmony
+    - max
+    - paw
+    - spectacle
+    - skype7
+    - slack
+    - sonos
+    - spotify
+    - sublime-text2
+    - synology-drive
+    - ukelele
+    - visual-studio-code
+    - virtualbox
+    - vlc
+    - vysor
+    - whatsapp
+    - xact
+    - xld
+
+- name: Install quicklook casks.
+    homebrew_cask:
+        name: "{{ item }}"
+        state: latest
+    with_items:
+    - qlcolorcode
+    - qlimagesize
+    - qlmarkdown
+    - quicklook-csv
+    - quicklook-csv
+    - webpquicklook
+    - provisionql
+
+- name: Install font casks.
+    homebrew_cask:
+        name: "{{ item }}"
+        state: latest
+    with_items:
+    - font-fira-code
+    - font-meslo-lg
+
+- include_role:
+    name: mas
+  tags: [mas]
+  vars:
+    mas_apps:
+      - { name: CleanMyDrive 2, id: 523620159 }
+      - { name: Disk Graph, id: 697942581 }
+      - { name: iA Writer, id: 775737590 }
+      - { name: iMovie, id: 408981434 }
+      - { name: Keynote, id: 409183694 }
+      - { name: Next Meeting, id: 1017470484 }
+      - { name: Numbers, id: 409203825 }
+      - { name: Outbank, id: 1094255754 }
+      - { name: Pages, id: 409201541 }
+      - { name: Reeder, id: 880001334 }
+      - { name: Spark, id: 1176895641 }
+      - { name: Telegram, id: 747648890 }
+      - { name: Things3, id: 904280696 }
+      - { name: Xcode, id: 497799835 }
+    mas_upgrade_all_apps: yes
