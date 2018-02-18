@@ -1,0 +1,17 @@
+---
+
+- name: Copy Umlauts optimized US keyboard layout bundle.
+  become: true
+  copy:
+    src: files/U.S._Umlauts.bundle
+    dest: /Library/Keyboard Layouts/U.S._Umlauts.bundle
+    mode: 0644
+    force: no
+
+- name: Copy Umlauts optimized Tarmak (ETROI) keyboard layout bundle.
+  become: true
+  copy:
+    src: files/Tarmak (ETROI) Umlauts.bundle
+    dest: /Library/Keyboard Layouts/Tarmak (ETROI) Umlauts.bundle
+    mode: 0644
+    force: no
