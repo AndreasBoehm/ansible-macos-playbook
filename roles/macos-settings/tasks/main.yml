@@ -1,10 +1,10 @@
 ---
 
-- include: trackpad.yml
+- include_tasks: trackpad.yml
   tags: [trackpad]
 
-- include: performance.yml
+- include_tasks: performance.yml
   tags: [performance]
 
-- include: misc.yml
+- include_tasks: misc.yml
   tags: [misc]
