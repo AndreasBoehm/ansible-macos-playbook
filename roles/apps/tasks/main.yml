@@ -48,6 +48,7 @@
     - spotify
     - sublime-text2
     - synology-drive
+    - telegram
     - ukelele
     - visual-studio-code
     - virtualbox
@@ -94,7 +95,6 @@
       - { name: Pages, id: 409201541 }
       - { name: Reeder, id: 880001334 }
       - { name: Spark, id: 1176895641 }
-      - { name: Telegram, id: 747648890 }
       - { name: Things3, id: 904280696 }
       - { name: Xcode, id: 497799835 }
     mas_upgrade_all_apps: yes
