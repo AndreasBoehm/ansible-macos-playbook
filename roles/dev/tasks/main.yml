@@ -1,0 +1,9 @@
+---
+
+- name: Install dev tools.
+  homebrew:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - git
+    - cocoapods

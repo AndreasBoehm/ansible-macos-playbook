@@ -1,0 +1,4 @@
+---
+
+- name: Run macOS softwareupdate.
+  shell: softwareupdate --install --all
