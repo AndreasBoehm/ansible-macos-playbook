@@ -4,14 +4,17 @@
   hosts: localhost
 
   roles:
-    - name: keyboard
-      tags: [keyboard]
-
     - name: shell
       tags: [shell]
 
     - name: yadm
       tags: [yadm]
+
+    - name: macos-settings
+      tags: [macos-settings]
+
+    - name: keyboard
+      tags: [keyboard]
 
     - name: apps
       tags: [apps]

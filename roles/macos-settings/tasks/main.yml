@@ -1,0 +1,10 @@
+---
+
+- include: trackpad.yml
+  tags: [trackpad]
+
+- include: performance.yml
+  tags: [performance]
+
+- include: misc.yml
+  tags: [misc]
