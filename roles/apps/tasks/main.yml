@@ -14,7 +14,7 @@
 - name: Install app casks.
   homebrew_cask:
     name: "{{ item }}"
-    state: latest
+    state: installed
   with_items:
     - 1password
     - alfred
@@ -32,7 +32,7 @@
     - fluid
     - github
     - google-chrome
-    - google-chrome-beta
+    - google-chrome-canary
     - hyperswitch
     - imageoptim
     - iterm2
@@ -61,7 +61,7 @@
 - name: Install quicklook casks.
   homebrew_cask:
     name: "{{ item }}"
-    state: latest
+    state: installed
   with_items:
     - qlcolorcode
     - qlimagesize
@@ -74,7 +74,7 @@
 - name: Install font casks.
   homebrew_cask:
     name: "{{ item }}"
-    state: latest
+    state: installed
   with_items:
     - font-fira-code
     - font-meslo-lg
@@ -98,3 +98,7 @@
       - { name: Things3, id: 904280696 }
       - { name: Xcode, id: 497799835 }
     mas_upgrade_all_apps: yes
+
+- name: Accept Xcode license.
+  shell: xcodebuild -license accept
+  become: true
