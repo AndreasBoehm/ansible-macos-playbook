@@ -11,6 +11,7 @@
     - flow
     - carthage
     - swiftlint
+    - pyenv
 
 - name: Install java 8 JDK cask.
   homebrew_cask:
