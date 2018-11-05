@@ -1,0 +1,34 @@
+---
+
+- name: Enable Dock auto-hide.
+  osx_defaults:
+    domain: com.apple.Dock
+    key: autohide
+    type: integer
+    value: 1
+  notify: Restart Dock # restart did not work
+
+- name: Improve Dock auto-hide time.
+  osx_defaults:
+    domain: com.apple.Dock
+    key: autohide-time-modifier
+    type: integer
+    value: 0
+  notify: Restart Dock # restart did not work
+
+
+- name: Improve Dock auto-hide delay.
+  osx_defaults:
+    domain: com.apple.Dock
+    key: autohide-delay
+    type: integer
+    value: 0
+  notify: Restart Dock # restart did not work
+
+- name: Install dockutil.
+  homebrew:
+    name: dockutil
+    state: latest
+
+- name: Remove all dock items.
+  command: dockutil --remove all

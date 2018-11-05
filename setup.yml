@@ -10,6 +10,9 @@
     - name: yadm
       tags: [yadm]
 
+    - name: essentials
+      tags: [essentials]
+
     - name: macos-settings
       tags: [macos-settings]
 
@@ -24,3 +27,6 @@
 
     - name: systemupdate
       tags: [systemupdate]
+
+    - name: cleanup
+      tags: [cleanup]

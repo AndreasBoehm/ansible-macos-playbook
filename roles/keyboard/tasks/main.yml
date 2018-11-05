@@ -4,7 +4,7 @@
   become: true
   copy:
     src: files/U.S._Umlauts.bundle
-    dest: /Library/Keyboard Layouts/U.S._Umlauts.bundle
+    dest: /Library/Keyboard Layouts/
     mode: 0644
     force: no
 
@@ -12,6 +12,6 @@
   become: true
   copy:
     src: files/Tarmak (ETROI) Umlauts.bundle
-    dest: /Library/Keyboard Layouts/Tarmak (ETROI) Umlauts.bundle
+    dest: /Library/Keyboard Layouts/
     mode: 0644
     force: no

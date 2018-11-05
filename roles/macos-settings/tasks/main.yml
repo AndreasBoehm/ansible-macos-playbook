@@ -6,5 +6,8 @@
 - include_tasks: performance.yml
   tags: [performance]
 
+- include_tasks: dock.yml
+  tags: [dock]
+
 - include_tasks: misc.yml
   tags: [misc]

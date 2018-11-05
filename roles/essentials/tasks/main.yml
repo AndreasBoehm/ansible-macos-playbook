@@ -1,0 +1,14 @@
+---
+
+- name: Install gnu-sed.
+  homebrew:
+    name: gnu-sed
+    state: latest
+    options: with-default-names
+
+- name: Install vim.
+  homebrew:
+    name: vim
+    state: latest
+    options: with-override-system-vi
+

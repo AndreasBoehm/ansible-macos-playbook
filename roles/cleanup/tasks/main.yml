@@ -1,0 +1,7 @@
+---
+
+- name: Cleanup brew.
+  command: brew cleanup
+
+- name: Cleanup gem.
+  command: gem cleanup
