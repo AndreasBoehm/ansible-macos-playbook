@@ -9,7 +9,7 @@
     creates: /usr/local/rvm
 
 - name: Install ruby and set as default.
-  shell: rvm install ruby-2.5.1 && rvm --default use 2.5.1
+  shell: rvm install ruby-2.5.1 && rvm alias create default 2.5.1
 
 - name: Update Rubygems.
   command: gem update --system
