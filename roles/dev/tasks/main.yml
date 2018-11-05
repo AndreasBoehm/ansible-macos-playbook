@@ -6,4 +6,16 @@
     state: latest
   with_items:
     - git
-    - cocoapods
+    - tig
+    - watchman # required for react native
+    - flow
+    - carthage
+    - swiftlint
+
+- name: Install java 8 JDK cask.
+  homebrew_cask:
+    name: java8
+    state: installed
+
+- include_tasks: ruby.yml
+  tags: [ruby]

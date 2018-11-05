@@ -1,0 +1,26 @@
+---
+
+- name: Install RVM keys.
+  shell: curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+
+- name: Install RVM.
+  shell: curl -sSL https://get.rvm.io | bash -s stable
+  args:
+    creates: /usr/local/rvm
+
+- name: Install ruby and set as default.
+  shell: rvm install ruby-2.5.1 && rvm --default use 2.5.1
+
+- name: Update Rubygems.
+  command: gem update --system
+
+- name: Update installed gems.
+  command: gem update
+
+- name: Install gems.
+  gem:
+    name: "{{ item }}"
+    state: latest
+  with_items:
+    - cocoapods
+    - git-up
