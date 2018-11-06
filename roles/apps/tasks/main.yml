@@ -57,6 +57,7 @@
     - whatsapp
     - xact
     - xld
+    - zeplin
 
 - name: Install quicklook casks.
   homebrew_cask:
