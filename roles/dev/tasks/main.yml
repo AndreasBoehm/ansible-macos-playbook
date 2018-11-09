@@ -12,6 +12,7 @@
     - carthage
     - swiftlint
     - pyenv
+    - bundletool
 
 - name: Install java 8 JDK cask.
   homebrew_cask:
