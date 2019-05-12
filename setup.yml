@@ -19,11 +19,11 @@
     - name: keyboard
       tags: [keyboard]
 
-    - name: dev
-      tags: [dev]
-
     - name: apps
       tags: [apps]
+
+    - name: dev
+      tags: [dev]
 
     - name: systemupdate
       tags: [systemupdate]
