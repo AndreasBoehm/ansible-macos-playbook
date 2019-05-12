@@ -5,7 +5,6 @@
     name: "{{ item }}"
     state: latest
   with_items:
-    - yarn # Includes node and npm
     - thefuck # used within the zsh configuration
     - zsh
     - zsh-syntax-highlighting

@@ -13,6 +13,7 @@
     - swiftlint
     - pyenv
     - bundletool
+    - srccpy # Android screen mirorring
 
 - name: Install java 8 JDK cask.
   homebrew_cask:

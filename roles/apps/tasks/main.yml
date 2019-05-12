@@ -18,7 +18,6 @@
   with_items:
     - 1password
     - alfred
-    - android-studio
     - audirvana-plus2
     - bartender
     - calibre
@@ -27,34 +26,41 @@
     - cleanmymac
     - cyberduck
     - docker
+    - drop-to-gif
     - dropbox
+    - fantastical
     - flux
     - fluid
+    - gimp
     - github
     - google-chrome
     - google-chrome-canary
-    - haptickey 
+    - haptickey
     - hyperswitch
     - imageoptim
+    - intel-power-gadget
     - iterm2
-    - karabiner-elements
     - jetbrains-toolbox
+    - karabiner-elements
+    - krisp
     - logitech-myharmony
+    - macdown
     - max
     - paw
-    - spectacle
     - skype7
     - slack
     - sonos
+    - spectacle
     - spotify
+    - sublime-merge
     - sublime-text2
     - synology-drive
     - telegram
+    - typora
     - ukelele
-    - visual-studio-code
     - virtualbox
+    - visual-studio-code
     - vlc
-    - vysor
     - whatsapp
     - xact
     - xld
@@ -86,19 +92,21 @@
   tags: [mas]
   vars:
     mas_apps:
-      - { name: CleanMyDrive 2, id: 523620159 }
-      - { name: Disk Graph, id: 697942581 }
-      - { name: iA Writer, id: 775737590 }
+      - { name: Next Meeting, id: 1017470484 }
+      - { name: Outbank, id: 1094255754 }
+      - { name: Spark, id: 1176895641 }
+      - { name: ToothFairy, id: 1191449274 }
       - { name: iMovie, id: 408981434 }
       - { name: Keynote, id: 409183694 }
-      - { name: Next Meeting, id: 1017470484 }
-      - { name: Numbers, id: 409203825 }
-      - { name: Outbank, id: 1094255754 }
       - { name: Pages, id: 409201541 }
-      - { name: Reeder, id: 880001334 }
-      - { name: Spark, id: 1176895641 }
-      - { name: Things3, id: 904280696 }
+      - { name: Numbers, id: 409203825 }
       - { name: Xcode, id: 497799835 }
+      - { name: CleanMyDrive 2, id: 523620159 }
+      - { name: Pocket, id: 568494494 }
+      - { name: Disk Graph, id: 697942581 }
+      - { name: iA Writer, id: 775737590 }
+      - { name: Reeder, id: 880001334 }
+      - { name: Things3, id: 904280696 }
     mas_upgrade_all_apps: yes
 
 - name: Accept Xcode license.
