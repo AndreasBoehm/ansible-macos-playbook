@@ -15,10 +15,5 @@
     - bundletool
     - srccpy # Android screen mirorring
 
-- name: Install java 8 JDK cask.
-  homebrew_cask:
-    name: java8
-    state: installed
-
 - include_tasks: ruby.yml
   tags: [ruby]
