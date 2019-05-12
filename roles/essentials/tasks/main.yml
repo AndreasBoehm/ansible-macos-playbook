@@ -9,5 +9,4 @@
   homebrew:
     name: vim
     state: latest
-    options: with-override-system-vi
 
