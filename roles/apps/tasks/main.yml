@@ -18,7 +18,7 @@
   with_items:
     - 1password
     - alfred
-    - audirvana-plus2
+#    - audirvana-plus2
     - bartender
     - calibre
     - charles
