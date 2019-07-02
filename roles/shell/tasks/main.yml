@@ -2,14 +2,14 @@
 
 - name: Install ZSH.
   homebrew:
-    name: "{{ item }}"
     state: latest
-  with_items:
-    - npm # required for pure prompt
-    - thefuck # used within the zsh configuration
-    - zsh
-    - zsh-syntax-highlighting
-    - zsh-autosuggestions
+    name: [
+      "npm", # required for pure prompt
+      "thefuck", # used within the zsh configuration
+      "zsh",
+      "zsh-syntax-highlighting",
+      "zsh-autosuggestions",
+    ]
 
 - name: Clone oh-my-zsh.
   git:

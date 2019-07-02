@@ -2,11 +2,11 @@
 
 - name: Ensure yadm is installed.
   homebrew:
-    name: "{{ item }}"
     state: latest
-  with_items:
-    - yadm
-    - gpg # required for encryption/decryption of dotfiles
+    name: [
+      "yadm",
+      "gpg" # required for encryption/decryption of dotfiles
+    ]
 
 - name: Fetch dotfiles.
   shell: yadm clone {{ yadm_repo_url }}

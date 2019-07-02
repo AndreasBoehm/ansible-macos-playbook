@@ -27,3 +27,10 @@
     key: NSAutomaticDashSubstitutionEnabled
     type: bool
     value: false
+
+- name: Show hidden files in finder.
+  osx_defaults:
+    domain: com.apple.finder
+    key: AppleShowAllFiles
+    type: bool
+    value: true

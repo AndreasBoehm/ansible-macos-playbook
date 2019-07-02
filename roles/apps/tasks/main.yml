@@ -5,7 +5,6 @@
     tap: "{{ item }}"
     state: present
   with_items:
-    - caskroom/cask
     - caskroom/drivers
     - caskroom/fonts
     - caskroom/versions
@@ -19,10 +18,10 @@
     - 1password
     - alfred
 #    - audirvana-plus2
+    - backblaze
     - bartender
     - calibre
     - charles
-    - cheatsheet
     - cleanmymac
     - cyberduck
     - docker
@@ -33,16 +32,15 @@
     - fluid
     - gimp
     - github
+    - gray
     - google-chrome
     - google-chrome-canary
     - haptickey
     - hyperswitch
     - imageoptim
-    - intel-power-gadget
     - iterm2
     - jetbrains-toolbox
     - karabiner-elements
-    - krisp
     - logitech-myharmony
     - macdown
     - max

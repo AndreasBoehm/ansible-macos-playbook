@@ -10,8 +10,13 @@
     name: vim
     state: latest
 
-- name: Install java 8 JDK cask.
+- name: Install htop.
+  homebrew:
+    name: htop
+    state: latest
+
+- name: Install java 8 JDK via adoptopenjdk cask.
   homebrew_cask:
-    name: java8
+    name: adoptopenjdk8
     state: installed
 

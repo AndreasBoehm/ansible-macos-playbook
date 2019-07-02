@@ -37,6 +37,6 @@
 
 - name: Upgrade all apps.
   shell: mas upgrade
-  when: mas_upgrade_all_apps
+  when: mas_upgrade_all_apps|bool
   register: mas_upgrade_result
   changed_when: "'Everything is up-to-date' not in mas_upgrade_result.stdout"

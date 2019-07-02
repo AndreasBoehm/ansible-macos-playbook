@@ -1,15 +1,15 @@
 ---
 
-- name: Install RVM keys.
-  shell: curl -sSL https://rvm.io/mpapis.asc | gpg --import -
+- name: Install rbenv.
+  homebrew:
+    name: ["rbenv", "ruby-build"]
+    state: installed
 
-- name: Install RVM.
-  shell: curl -sSL https://get.rvm.io | bash -s stable
-  args:
-    creates: /usr/local/rvm
+- name: Install ruby 2.6.3.
+  command: rbenv install 2.6.3 --skip-existing
 
-- name: Install ruby and set as default.
-  shell: rvm install ruby-2.5.1 && rvm alias create default 2.5.1
+- name: Set ruby 2.6.3 as the global ruby version.
+  command: rbenv global 2.6.3
 
 - name: Update Rubygems.
   command: gem update --system

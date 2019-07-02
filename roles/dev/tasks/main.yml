@@ -2,18 +2,24 @@
 
 - name: Install dev tools.
   homebrew:
-    name: "{{ item }}"
     state: latest
-  with_items:
-    - git
-    - tig
-    - watchman # required for react native
-    - flow
-    - carthage
-    - swiftlint
-    - pyenv
-    - bundletool
-    - srccpy # Android screen mirorring
+    name: [
+      "git",
+      "tig",
+      "watchman", # required for react native
+      "flow",
+      "carthage",
+      "swiftlint",
+      "bundletool",
+      "scrcpy", # Android screen mirorring
+    ]
+
+- name: Install dev tools casks.
+  homebrew_cask:
+    state: installed
+    name: [
+      "intel-haxm" # required for the android virtual device
+    ]
 
 - include_tasks: ruby.yml
   tags: [ruby]
