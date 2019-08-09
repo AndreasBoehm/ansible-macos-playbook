@@ -45,7 +45,7 @@
     - macdown
     - max
     - paw
-    - skype7
+    - skype
     - slack
     - sonos
     - spectacle
@@ -105,6 +105,7 @@
       - { name: iA Writer, id: 775737590 }
       - { name: Reeder, id: 880001334 }
       - { name: Things3, id: 904280696 }
+      - { name: HazeOver, id: 430798174 }
     mas_upgrade_all_apps: yes
 
 - name: Accept Xcode license.
