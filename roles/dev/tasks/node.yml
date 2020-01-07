@@ -1,0 +1,12 @@
+---
+
+- name: Install n (node version manager).
+  homebrew:
+    name: "n"
+    state: installed
+
+- name: Install latest LTS node version.
+  command: n lts
+
+- name: Install latest node 8 version.
+  command: n 8

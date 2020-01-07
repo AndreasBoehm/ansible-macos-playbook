@@ -17,7 +17,6 @@
   with_items:
     - 1password
     - alfred
-#    - audirvana-plus2
     - backblaze
     - bartender
     - calibre
@@ -34,7 +33,6 @@
     - github
     - gray
     - google-chrome
-    - google-chrome-canary
     - haptickey
     - hyperswitch
     - imageoptim
@@ -45,10 +43,10 @@
     - macdown
     - max
     - paw
+    - rectangle
     - skype
     - slack
     - sonos
-    - spectacle
     - spotify
     - sublime-merge
     - sublime-text2
@@ -103,7 +101,7 @@
       - { name: Pocket, id: 568494494 }
       - { name: Disk Graph, id: 697942581 }
       - { name: iA Writer, id: 775737590 }
-      - { name: Reeder, id: 880001334 }
+      - { name: Reeder 4, id: 1449412482 }
       - { name: Things3, id: 904280696 }
       - { name: HazeOver, id: 430798174 }
     mas_upgrade_all_apps: yes

@@ -1,0 +1,12 @@
+---
+
+- name: Install pyenv.
+  homebrew:
+    name: ["pyenv", "python-build"]
+    state: installed
+
+- name: Install python 3.7.3.
+  command: pyenv install 3.7.3 --skip-existing
+
+- name: Set python 3.7.3 as the global pytho version.
+  command: pyenv global 3.7.3
